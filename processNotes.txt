@@ -13,6 +13,8 @@ STEP 1: Create a div that will contain two images you want to crossfade between,
 
 STEP 2: Setup the images match in size on top of the gallery background
     o   To do this, first create a gallery-container 
+        o   First, we need to add "position: relative" because when we add the crossfade image, the position will be relative top
+            the gallery-container and it will perfectly overlay.
         o   During development, you can add  background color to see how it matches up to the images.
         o   Additionally, you can add a border if you want.  
 
@@ -30,6 +32,29 @@ STEP 3: To get the second image to overlay over the first, you need to add a cla
     o   In the case of this study, it will be the golden gate bridge at dusk
     o   The class will be "crossfade-img".
 
+                    <div class="gallery-container">
+                        <img src="./img/america-architecture-bay-208745.jpg" alt="golden gate during the day">
+                        <img class="crossfade-img" src="./img/architecture-bridge-fog-1141853.jpg" alt="golden gate at dusk">          <== add class
+                    </div>
+
 
 STEP 3: For the "crossfade-img" css:
-    o   First, set the position to absolute
+    o   First, set the position to absolute so that the crossfade image is outside the normal flow 
+    o   Then, we need to remember that we set "position: relative" in the gallery-container, which will allow us to perfectly overlay the 
+        crossfade image over the other.
+
+                    .gallery-container {                                                                               
+                        position: relative;                    <== realtive positioning inside the galler container
+                        height: 500px;                                                                                        
+                        width: 700px;                                                                                        
+                        border: 10px solid black;                                                                           
+                    }
+
+
+    o   So because we set the positioning of "relative" (i.e. the positioning here is realtive to the positioning elsewhere), we can 
+        have absolute positioning for element inside this container.
+
+                    .crossfade-img {                                                                                     
+                        position: absolute;                                                                                
+                        top: 0;                                                                                            
+                    }

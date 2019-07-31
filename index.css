@@ -14,6 +14,7 @@
 }
 
 .gallery-container {                                                                                 /* For the container that holds the images in your gallery */
+    position: relative;
     height: 500px;                                                                                         /* set the height of the container that the images we put in will adhere to*/
     width: 700px;                                                                                          /* set the width of the container that the images we put in will adhere to */
     border: 10px solid black;                                                                            /* optional border */
@@ -25,5 +26,6 @@
 }
 
 .crossfade-img {                                                                                      /* For the image we want to crossfade into.. */
-    position: absolute;                                                                                /* set the position of the img to abolsute so it is outside the normal flow */
+    position: absolute;                                                                                /* set the position of the img to absolute so it is outside the normal flow (but within the gallery-container)*/
+    top: 0;                                                                                            /* and when you set top: 0, you will get aperfect overlay.*/
 }
