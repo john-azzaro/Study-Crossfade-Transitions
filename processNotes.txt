@@ -5,3 +5,19 @@ STEP 1: Setup your project folder and initial files
     o   In this case, we only need to use HTML and CSS.
 
 STEP 2: Find the pictures you wan to use for your gallery and add them to a gallery images folder.
+
+FOR IMAGE ON IMAGE CROSSFADE
+============================
+
+STEP 1: Create a div that will contain two images you want to crossfade between, which we call gallery-container in this study.
+
+STEP 2: Setup the images match in size on top of the gallery background
+    o   To do this, first create a gallery-container background size and color
+    o   Then, select the images inside the gallery-container and match them to the same height and width.
+
+            .gallery-container img {
+                width: 100%;
+                height: 100%;
+            }
+
+STEP 3: 

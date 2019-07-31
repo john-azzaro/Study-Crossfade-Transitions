@@ -5,3 +5,21 @@
     font-family: 'Poppins', sans-serif;                                                                      /* font used (with metalink in HTML) */    
     color: white;                                                            
 }
+
+.title {                                                                                               /* For the title*/
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-container {                                                                                 /* For the container that holds the images in your gallery */
+    background-color: black;                                                                              /* the background is black*/
+    height: 500px;                                                                                         /* the height of the container*/
+    width: 700px;                                                                                            /* the width of the container*/
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 100%;
+}
