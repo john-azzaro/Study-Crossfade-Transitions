@@ -1,0 +1,7 @@
+*, *::before, *::after {                                                                                 /* Default values: */
+    box-sizing: border-box;                                                                                  /* Includes padding and border in elements for total width and height */
+    margin: 0;                                                                                               /* set default margin to 0 */
+    padding: 0;                                                                                              /* set default padding to 0 */
+    font-family: 'Poppins', sans-serif;                                                                      /* font used (with metalink in HTML) */    
+    color: white;                                                            
+}
