@@ -6,6 +6,10 @@
     color: white;                                                            
 }
 
+body {
+    background: linear-gradient(to right, rgb(177, 178, 189), rgb(165, 168, 149));
+}
+
 .title {                                                                                               /* For the title*/
     height: 20vh;
     display: flex;
@@ -15,9 +19,9 @@
 
 .gallery-container {                                                                                 /* For the container that holds the images in your gallery */
     position: relative;
-    height: 500px;                                                                                         /* set the height of the container that the images we put in will adhere to*/
-    width: 700px;                                                                                          /* set the width of the container that the images we put in will adhere to */
-    border: 10px solid black;                                                                            /* optional border */
+    height: 400px;                                                                                         /* set the height of the container that the images we put in will adhere to*/
+    width: 600px;                                                                                          /* set the width of the container that the images we put in will adhere to */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);                      /* optional border */
 }
 
 .gallery-container img {                                                                              /* For the images inside the gallery container...*/
@@ -27,5 +31,13 @@
 
 .crossfade-img {                                                                                      /* For the image we want to crossfade into.. */
     position: absolute;                                                                                /* set the position of the img to absolute so it is outside the normal flow (but within the gallery-container)*/
-    top: 0;                                                                                            /* and when you set top: 0, you will get aperfect overlay.*/
+    top: 0;                                                                                            /* and when you set top: 0, you will get a perfect overlay.*/
+    left: 0;                                                                                            /* and left: 0 makes sure it is zeroed out perfectly above the image. */
+    opacity: 0;                                                                                        /* to get the corssfade, you first have to set the top image opactiy to 0 so that we can intorduce a fade in*/
+    transition: opacity 0.5s ease;
+}
+
+.crossfade-img:hover {                                                                                /* when the user hovers on the crossfade image...*/
+    opacity: 1; 
+    cursor: pointer;                                                                                         /*... set the opacity to 1 will show the image! */
 }

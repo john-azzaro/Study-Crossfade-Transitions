@@ -53,8 +53,23 @@ STEP 3: For the "crossfade-img" css:
 
     o   So because we set the positioning of "relative" (i.e. the positioning here is realtive to the positioning elsewhere), we can 
         have absolute positioning for element inside this container.
+    o   then when you put "top: 0", it will have absolute positioning, with a top of 0 in the gallery container which has relative positioning inside it.
 
                     .crossfade-img {                                                                                     
-                        position: absolute;                                                                                
-                        top: 0;                                                                                            
+                        position: absolute;                            <==  outside normal flow                                               
+                        top: 0;                                        <== with a top of 0!                                                    
                     }
+
+STEP 4: To get the crossfade effect, you want to add opacity to the image you just put on top.
+    o   So first, add "opacity: 0" to your crossfade-img so that it can fade in and out on hover.
+
+STEP 5: Add a pseudo element that, on hover, will reveal the image we just set to opactiy of 0:
+    o   set opactiy: 1!
+    o   And if you want to change the transition effect, add "transition" property to the crossfade-img
+
+                     transition: opacity 0.8s ease;
+
+                     o  "opacity" is what we want the transition to address
+                     o  "0.8s" is the amount of time the effect will transpire
+                     o  "ease" is the type of transition effect.
+
