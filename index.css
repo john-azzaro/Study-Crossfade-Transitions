@@ -54,22 +54,22 @@ body {
 /* Second Image (city) */
 .fade::after {                                                                                          /* for the fade class, we use the ::after pseudo element which essentially adds additional content to the existing div*/        
     content: 'Check out these buildings!';                                                           /* for content, which is only used with pseudo elements after and before, we have text that will show on hover*/
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.4em;
+    color: white;                                                                                     /* text color */
+    display: flex;                                                                                      /* display property for text */
+    justify-content: center;                                                                             /* center text horizontally */
+    align-items: center;                                                                                 /* center text vertically*/
+    font-size: 1.4em;                                                                                     /* font size */
     background: black;                                                                                /* set the background to a desired color*/
     width: 100%;                                                                                         /* the background color will be 100% width of the set image size within the container*/
     height: 100%;                                                                                       /* the background color will be 100% height of the set image size within the container*/
     position: absolute;                                                                               /* set the position to absolute so it is outside noraml flow, and bc of the realitve position of the gallery itself, we can place black box on top with top and left*/
     top: 0;                                                                                             /* position the black background top */
     left: 0;                                                                                             /* position the black background left*/
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    opacity: 0;                                                                                          /* top image has an opactiy of 0 (to be revealed on hover)*/
+    transition: opacity 0.3s ease;                                                                       /* transition effect for the text area on hover*/
 }
 
 .fade:hover::after {                                                                                    /* When the user hovers over the .fade::after div*/
-    opacity: 0.7;
+    opacity: 0.7;                                                                                          /* on hover, the opacity will transition to a darker color (see .fade::after > transition)*/
     cursor: pointer;
 }

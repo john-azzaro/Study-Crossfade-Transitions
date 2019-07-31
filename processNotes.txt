@@ -79,4 +79,6 @@ FOR IMAGE AND TEXT FADE
 ================================
 STEP 1: Create a new image div (will be almost exactly like the intial steps above)
 STEP 2: For the single image you have, add a "fade" class to the CONTAINER (not the image itself).
-STEP 3: 
+STEP 3: We do the same thing that we did for the previous img, except that we include text stylizations as well
+    o   for this img, we are going to use the ::after pseudo element
+STEP 4: add hover class for image.
