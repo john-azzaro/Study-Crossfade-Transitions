@@ -73,3 +73,10 @@ STEP 5: Add a pseudo element that, on hover, will reveal the image we just set t
                      o  "0.8s" is the amount of time the effect will transpire
                      o  "ease" is the type of transition effect.
 
+
+
+FOR IMAGE AND TEXT FADE   
+================================
+STEP 1: Create a new image div (will be almost exactly like the intial steps above)
+STEP 2: For the single image you have, add a "fade" class to the CONTAINER (not the image itself).
+STEP 3: 

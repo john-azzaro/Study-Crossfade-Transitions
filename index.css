@@ -14,7 +14,14 @@ body {
     height: 20vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+}
+
+.gallery {                                                                                               /* For the image gallery itself (includes two examples)*/
+    display: flex;                                                                                      /* set a display of flex so that we line them up side by side*/
+    justify-content: space-around;                                                                       /* use justify-content to set horizontal alignment */                                                                                    /* set the height to 100% of the view port*/
+    align-items: center;                                                                                 /* set the vertical positioning in the center */                                                                          
+    min-height: 100vh;                                                                                   /* but make sure to set the minimum height of the view port so that the gallery can be centered. */
 }
 
 .gallery-container {                                                                                 /* For the container that holds the images in your gallery */
@@ -29,6 +36,7 @@ body {
     height: 100%;                                                                                          /* the same for height... so we are essentially saying "make these images the size of the gallery container"*/
 }
 
+/* First image (golden gate bridge) */
 .crossfade-img {                                                                                      /* For the image we want to crossfade into.. */
     position: absolute;                                                                                /* set the position of the img to absolute so it is outside the normal flow (but within the gallery-container)*/
     top: 0;                                                                                            /* and when you set top: 0, you will get a perfect overlay.*/
@@ -40,4 +48,28 @@ body {
 .crossfade-img:hover {                                                                                /* when the user hovers on the crossfade image...*/
     opacity: 1; 
     cursor: pointer;                                                                                         /*... set the opacity to 1 will show the image! */
+}
+
+
+/* Second Image (city) */
+.fade::after {                                                                                          /* for the fade class, we use the ::after pseudo element which essentially adds additional content to the existing div*/        
+    content: 'Check out these buildings!';                                                           /* for content, which is only used with pseudo elements after and before, we have text that will show on hover*/
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    background: black;                                                                                /* set the background to a desired color*/
+    width: 100%;                                                                                         /* the background color will be 100% width of the set image size within the container*/
+    height: 100%;                                                                                       /* the background color will be 100% height of the set image size within the container*/
+    position: absolute;                                                                               /* set the position to absolute so it is outside noraml flow, and bc of the realitve position of the gallery itself, we can place black box on top with top and left*/
+    top: 0;                                                                                             /* position the black background top */
+    left: 0;                                                                                             /* position the black background left*/
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.fade:hover::after {                                                                                    /* When the user hovers over the .fade::after div*/
+    opacity: 0.7;
+    cursor: pointer;
 }
