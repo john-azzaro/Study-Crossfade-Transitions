@@ -1,2 +1,7 @@
 Process Notes
 ===============
+
+STEP 1: Setup your project folder and initial files
+    o   In this case, we only need to use HTML and CSS.
+
+STEP 2: Find the pictures you wan to use for your gallery and add them to a gallery images folder.
