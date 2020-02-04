@@ -16,7 +16,7 @@ Crossfade Transtions are used to blend two (or more) images or text areas togeth
 
 ### Crossfade is pretty straight-forward to implement
 -----
-Other than getting the gallery correctly built, getting a crossfade transition with pure CSS simply requires 
+Other than getting the gallery correctly built, getting a crossfade transition with pure CSS simply requires an primary image and a cross-fade image on top (although I wouldnt necessarily say the top since you arent messing with the z-index positioning). Just setting the opacity level to 0 and hovering to 1 for image on image or transitioning to shaded background with text is extremely easy to setup.
 
 </dd>
 </dl>
