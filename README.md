@@ -8,6 +8,18 @@ Crossfade Transtions are used to blend two (or more) images or text areas togeth
 
 <br>
 
+## What are the key takeaways from the calculator study?
+
+<br>
+<dl>
+<dd> 
+
+### Using data attributes for selectors helps keeps code manageable.
+-----
+
+</dd>
+</dl>
+
 ## Does Crossfade Transition Study feature commentary?
 Yes! I use extensive commentary (mostly in the form of my thought process) so that the new and curious can follow the logic in the program and get an idea of my reasoning behind each and every line of code.  In addition to my line-by-line commantary, I also provide a Process text file that gives a good outline of my implementation process. 
 
