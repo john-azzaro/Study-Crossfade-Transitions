@@ -14,8 +14,9 @@ Crossfade Transtions are used to blend two (or more) images or text areas togeth
 <dl>
 <dd> 
 
-### Using data attributes for selectors helps keeps code manageable.
+### Crossfade is pretty straight-forward to implement
 -----
+Other than getting the gallery correctly built, getting a crossfade transition with pure CSS simply requires 
 
 </dd>
 </dl>
