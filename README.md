@@ -8,7 +8,7 @@ Crossfade Transtions are used to blend two (or more) images or text areas togeth
 
 <br>
 
-## What are the key takeaways from the calculator study?
+## What are the key takeaways from the cCrossfade transition study?
 
 <dl>
 <dd> 
