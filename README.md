@@ -10,7 +10,6 @@ Crossfade Transtions are used to blend two (or more) images or text areas togeth
 
 ## What are the key takeaways from the calculator study?
 
-<br>
 <dl>
 <dd> 
 
