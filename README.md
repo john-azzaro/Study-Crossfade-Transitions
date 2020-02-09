@@ -6,6 +6,12 @@ See it Live: https://john-azzaro.github.io/Study-Crossfade-Transitions/
 ## What is Crossfade Transition Study?
 Crossfade Transtions are used to blend two (or more) images or text areas together at a defined transparency. The "Crossfade Transition Study" demonstrates how this is accomplished with a simple image gallery and pure CSS.  The first image, which features the golden gate bridge, crossfades between a dusk image and day time image with gradual transition effects.  The second image, which featires a city skyline, crossfades between the skyline and a dark transparent background with descriptive text.
 
+Here are a few questions from the study to explore:
+
+* [What are the key takeaways from the Crossfade transition study?](#What-are-the-key-takeaways-from-the-Crossfade-transition-study)
+* [Does Crossfade Transition Study feature commentary?](#Does-Crossfade-Transition-Study-feature-commentary)
+* [What are the key features of Crossfade Transition Study?](#What-are-the-key-features-of-Crossfade-Transition-Study)
+* [Screenshots](#Screenshots)
 <br>
 
 ## What are the key takeaways from the Crossfade transition study?
